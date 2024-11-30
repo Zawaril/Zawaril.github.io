@@ -7,73 +7,108 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5;
       margin: 0;
       padding: 0;
+      background-color: #f5f5f5;
       color: #333;
     }
+
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
+      background-color: #f3e5ab;
+      color: #333;
+      padding: 40px 0;
       text-align: center;
+      border-bottom: 5px solid #d1c27d;
     }
+
     header h1 {
       font-size: 2.5em;
+      margin-bottom: 10px;
     }
+
     header p {
       font-size: 1.2em;
+      margin-top: 5px;
     }
+
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
     }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
     section {
-      margin: 30px 0;
+      margin: 40px 0;
     }
+
     section h2 {
-      font-size: 1.8em;
+      font-size: 2em;
       color: #333;
+      margin-bottom: 20px;
     }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
     ul {
       list-style-type: none;
       padding-left: 0;
     }
+
     li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      font-size: 1.2em;
     }
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    .links a {
+
+    a {
       color: #3498db;
       text-decoration: none;
     }
-    .links a:hover {
+
+    a:hover {
       text-decoration: underline;
     }
-    .bio p {
-      font-size: 1.2em;
-      line-height: 1.5em;
+
+    footer {
+      background-color: #f3e5ab;
+      color: #333;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 50px;
     }
-    .card {
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+
+    .links a {
+      color: #3498db;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Jawaril Munshad Abedin</h1>
-    <p>Researcher and Educator in AI and Neuroscience</p>
+    <div class="container">
+      <img src="IMG_1077.jpg" alt="Jawaril Munshad Abedin" class="profile-img">
+      <h1>Jawaril Munshad Abedin</h1>
+      <p>Researcher and Educator in AI and Neuroscience</p>
+    </div>
   </header>
 
   <div class="container">
@@ -81,17 +116,19 @@
     <section class="bio">
       <h2>About Me</h2>
       <div class="card">
-        <p>Hi, I'm Jawaril Munshad Abedin, currently working as a Lecturer in the Department of Computer Science and Engineering at BRAC University. My research focuses on artificial intelligence, machine learning, and computational neuroscience. I am passionate about developing deep learning models and exploring their applications in neural networks and brain disorders.</p>
+        <p>Hi, I'm Jawaril Munshad Abedin, a passionate researcher and educator currently working as a Lecturer in the Department of Computer Science and Engineering at BRAC University. My research focuses on artificial intelligence, machine learning, and computational neuroscience. I aim to bridge the gap between AI models and neural networks by exploring brain disorders and memory-related phenomena.</p>
       </div>
     </section>
 
     <section class="contact">
       <h2>Contact Information</h2>
-      <ul>
-        <li>Email: <a href="mailto:jawaril.munshad.abedin@gmail.com">jawaril.munshad.abedin@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/jawaril" target="_blank">LinkedIn</a></li>
-        <li>GitHub: <a href="https://github.com/Zawaril" target="_blank">GitHub</a></li>
-      </ul>
+      <div class="card">
+        <ul>
+          <li>Email: <a href="mailto:jawaril.munshad.abedin@gmail.com">jawaril.munshad.abedin@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/jawaril" target="_blank">LinkedIn</a></li>
+          <li>GitHub: <a href="https://github.com/Zawaril" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
     </section>
 
     <section class="education">
