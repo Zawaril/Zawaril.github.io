@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jawaril Munshad Abedin - Personal Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      background-color: #fafafa;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
-      background-color: #f3e5ab;
-      color: #333;
+      background-color: #3498db;
+      color: white;
       padding: 40px 0;
       text-align: center;
       border-bottom: 5px solid #d1c27d;
@@ -23,18 +25,48 @@
 
     header h1 {
       font-size: 2.5em;
-      margin-bottom: 10px;
+      margin: 0;
     }
 
     header p {
       font-size: 1.2em;
-      margin-top: 5px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      background-color: #555;
     }
 
     .container {
       width: 80%;
       margin: auto;
-      overflow: hidden;
+      padding-top: 100px; /* Adjust based on nav height */
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
     }
 
     .profile-img {
@@ -43,173 +75,141 @@
       border-radius: 50%;
       border: 5px solid #fff;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      margin-top: 30px;
+      margin-right: 30px;
+    }
+
+    .profile-text {
+      max-width: 600px;
     }
 
     section {
-      margin: 40px 0;
+      margin: 60px 0;
+      text-align: center;
     }
 
     section h2 {
-      font-size: 2em;
-      color: #333;
-      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #3498db;
     }
 
     .card {
+      display: inline-block;
       background-color: #fff;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      padding: 25px;
-      margin-bottom: 30px;
+      padding: 20px;
+      width: 30%;
+      margin: 15px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      transition: transform 0.3s ease;
+      text-align: left;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.5em;
     }
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
     }
 
-    li {
-      margin-bottom: 15px;
-      font-size: 1.2em;
-    }
-
-    a {
+    footer a {
       color: #3498db;
       text-decoration: none;
     }
 
-    a:hover {
+    footer a:hover {
       text-decoration: underline;
-    }
-
-    footer {
-      background-color: #f3e5ab;
-      color: #333;
-      padding: 15px 0;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .links a {
-      color: #3498db;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header Section -->
   <header>
     <div class="container">
-      <img src="IMG_9FC7D9328382-1.jpeg" alt="Jawaril Munshad Abedin" class="profile-img">
-      <h1>Jawaril Munshad Abedin</h1>
-      <p>Researcher and Educator in AI and Neuroscience</p>
+      <div class="profile-container">
+        <img src="IMG_9FC7D9328382-1.jpeg" alt="Jawaril Munshad Abedin" class="profile-img">
+        <div class="profile-text">
+          <h1>Jawaril Munshad Abedin</h1>
+          <p>AI Researcher | Educator | Developer</p>
+        </div>
+      </div>
     </div>
   </header>
 
+  <!-- About Section -->
   <div class="container">
-
-    <section class="bio">
+    <section id="about">
       <h2>About Me</h2>
       <div class="card">
-        <p>Hi, I'm Jawaril Munshad Abedin, a passionate researcher and educator currently working as a Lecturer in the Department of Computer Science and Engineering at BRAC University. My research focuses on artificial intelligence, machine learning, and computational neuroscience. I aim to bridge the gap between AI models and neural networks by exploring brain disorders and memory-related phenomena.</p>
+        <p>I'm Jawaril Munshad Abedin, a passionate researcher and educator in AI and neuroscience. I am currently working as a Lecturer in the Department of Computer Science and Engineering at BRAC University. I focus on AI research, machine learning, and developing deep learning models to bridge the gap between AI and neural networks, particularly in understanding brain disorders.</p>
       </div>
     </section>
-
-    <section class="contact">
-      <h2>Contact Information</h2>
-      <div class="card">
-        <ul>
-          <li>Email: <a href="mailto:jawaril.munshad.abedin@gmail.com">jawaril.munshad.abedin@gmail.com</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/jawaril" target="_blank">LinkedIn</a></li>
-          <li>GitHub: <a href="https://github.com/Zawaril" target="_blank">GitHub</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="education">
-      <h2>Education</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Bachelor of Science in Computer Science and Engineering</strong> - Brac University (January 2018 - January 2022), CGPA: 3.99/4.00</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="work">
-      <h2>Work Experience</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Lecturer (Full-Time)</strong> - Brac University, Department of Computer Science and Engineering (June 2023 - Present)</li>
-          <li><strong>Lecturer (Adjunct)</strong> - Brac University, Department of Computer Science and Engineering (May 2022 - May 2023)</li>
-          <li><strong>Undergraduate Teaching Assistant</strong> - Brac University (February 2020 - January 2022)</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="research">
-      <h2>Research and Projects</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Solving Combinatorial Optimization Problems using Deep Learning</strong>: Using RNNs (LSTM, GRU, Dilated) for TSP, Nurse Scheduling, and Maxcut problems. [<a href="https://github.com/RNN-VCA-CO/RNN-VCA-CO" target="_blank">Code</a>]</li>
-          <li><strong>bbOCR: Bengali OCR Pipeline</strong>: Open-source OCR for Bengali language documents. [<a href="https://github.com/BengaliAI/bbocr" target="_blank">Code</a>]</li>
-          <li><strong>Explainable News Classification</strong>: News classification using LIME for explainability. [<a href="https://github.com/Zawaril/Explainable-Classification-of-News-Data-Using-Embeddingbag" target="_blank">Code</a>]</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="publications">
-      <h2>Publications</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Journal:</strong> "Supplementing recurrent neural networks with annealing to solve combinatorial optimization problems", Machine Learning Science and Technology, 2023. [<a href="https://doi.org/10.1088/2632-2153/acb895" target="_blank">DOI</a>]</li>
-          <li><strong>Preprint:</strong> "bbOCR: An Open-source Multi-domain OCR Pipeline for Bengali Documents", [<a href="https://doi.org/10.48550/arXiv.2308.10647" target="_blank">DOI</a>]</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="card">
-        <ul>
-          <li>Programming Languages: Python, Java</li>
-          <li>Libraries/Frameworks: PyTorch, Numpy, Pandas, Scikit-learn</li>
-          <li>Tools: LaTeX, OBS, Google Workspace</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="achievements">
-      <h2>Achievements</h2>
-      <div class="card">
-        <ul>
-          <li>Quality Journal Publication Award (2024)</li>
-          <li>Richard E. Merwin Student Scholarship (2020)</li>
-          <li>National Girls' Programming Contest (2019) - 33rd Position</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="volunteering">
-      <h2>Volunteering</h2>
-      <div class="card">
-        <ul>
-          <li>Organizer, Shadhinota Fundraising 2024 - Raised 511,000 Taka for victims of political unrest</li>
-          <li>Volunteer, Ashia Foundation (2020) - Flood relief campaign</li>
-        </ul>
-      </div>
-    </section>
-
-    
-
   </div>
 
+  <!-- Projects Section -->
+  <div class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Combinatorial Optimization with RNN</h3>
+        <p>Using deep learning techniques such as LSTM, GRU, and Dilated RNN to solve complex combinatorial optimization problems like the Traveling Salesman Problem and Nurse Scheduling Problem.</p>
+      </div>
+      <div class="card">
+        <h3>Bengali OCR Pipeline</h3>
+        <p>Developed an open-source OCR pipeline for Bengali text recognition, improving accuracy for documents such as newspapers and books.</p>
+      </div>
+      <div class="card">
+        <h3>Explainable AI in News Classification</h3>
+        <p>Using LIME for explainability in classifying news articles into different categories such as Business, Science, Technology, and World News.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="container">
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <h3>Programming</h3>
+        <p>Python, Java, C++</p>
+      </div>
+      <div class="card">
+        <h3>Frameworks</h3>
+        <p>PyTorch, TensorFlow, Scikit-learn</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Git, LaTeX, Docker, Jupyter</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container">
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>If you'd like to connect, feel free to reach out via <a href="mailto:jawaril.munshad.abedin@gmail.com">email</a> or through my <a href="https://www.linkedin.com/in/jawaril" target="_blank">LinkedIn</a> profile.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Jawaril Munshad Abedin</p>
+    <p>&copy; 2024 Jawaril Munshad Abedin | <a href="https://github.com/Zawaril" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/jawaril" target="_blank">LinkedIn</a></p>
   </footer>
 
 </body>
